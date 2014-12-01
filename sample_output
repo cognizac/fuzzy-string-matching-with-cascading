@@ -1,0 +1,147 @@
+~/pycascading/local_run.sh clean_product_names.py
+/home/cloudera/jython2.7b3/Lib/site-packages/fuzzywuzzy/fuzz.py:33: UserWarning: Using slow pure-python SequenceMatcher
+  warnings.warn('Using slow pure-python SequenceMatcher')
+14/12/01 04:06:36 INFO util.HadoopUtil: resolving application jar from found main method on: com.twitter.pycascading.Main
+14/12/01 04:06:36 INFO planner.HadoopPlanner: using application jar: null
+14/12/01 04:06:36 INFO property.AppProps: using app.id: F5B93E0EA6B12F5E46964561F8373D4F
+14/12/01 04:06:36 INFO flow.Flow: [sink/81:clean_product_...] starting
+14/12/01 04:06:36 INFO flow.Flow: [sink/81:clean_product_...]  source: Hfs["TextLine[['offset', 'line']->[ALL]]"]["/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv"]"]
+14/12/01 04:06:36 INFO flow.Flow: [sink/81:clean_product_...]  sink: Hfs["TextDelimited[[UNKNOWN]->['cleanedTuple', 'date', 'item_amount']]"]["/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/out"]"]
+14/12/01 04:06:36 INFO flow.Flow: [sink/81:clean_product_...]  parallel execution is enabled: false
+14/12/01 04:06:36 INFO flow.Flow: [sink/81:clean_product_...]  starting jobs: 1
+14/12/01 04:06:36 INFO flow.Flow: [sink/81:clean_product_...]  allocating threads: 1
+14/12/01 04:06:36 INFO flow.FlowStep: [sink/81:clean_product_...] starting step: (1/1) ...tching-with-cascading/out
+14/12/01 04:06:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/12/01 04:06:37 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+14/12/01 04:06:37 WARN snappy.LoadSnappy: Snappy native library is available
+14/12/01 04:06:37 WARN snappy.LoadSnappy: Snappy native library not loaded
+14/12/01 04:06:37 INFO mapred.FileInputFormat: Total input paths to process : 1
+14/12/01 04:06:37 INFO flow.FlowStep: [sink/81:clean_product_...] submitted hadoop job: job_local1059690743_0001
+14/12/01 04:06:38 INFO mapred.LocalJobRunner: Waiting for map tasks
+14/12/01 04:06:38 INFO mapred.LocalJobRunner: Starting task: attempt_local1059690743_0001_m_000000_0
+14/12/01 04:06:38 INFO util.ProcessTree: setsid exited with exit code 0
+14/12/01 04:06:38 INFO mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@2d0e7adf
+14/12/01 04:06:38 INFO io.MultiInputSplit: current split input path: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv
+14/12/01 04:06:38 INFO mapred.MapTask: Processing split: cascading.tap.hadoop.io.MultiInputSplit@5cdca7d1
+14/12/01 04:06:38 INFO mapred.MapTask: numReduceTasks: 0
+14/12/01 04:06:38 INFO hadoop.FlowMapper: cascading version: Concurrent, Inc - Cascading 2.0.8
+14/12/01 04:06:38 INFO hadoop.FlowMapper: child jvm opts: -Xmx200m
+14/12/01 04:06:38 INFO hadoop.FlowMapper: sourcing from: Hfs["TextLine[['offset', 'line']->[ALL]]"]["/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv"]"]
+14/12/01 04:06:38 INFO hadoop.FlowMapper: sinking to: Hfs["TextDelimited[[UNKNOWN]->['cleanedTuple', 'date', 'item_amount']]"]["/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/out"]"]
+14/12/01 04:06:44 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:06:47 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:06:50 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:06:53 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:06:56 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:06:59 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:02 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:05 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:08 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:11 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:14 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:17 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:20 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:23 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:26 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:29 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:32 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:35 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:38 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:41 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:44 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:47 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:50 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:53 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:56 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:07:59 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:02 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:05 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:08 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:11 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:14 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:17 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:20 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:23 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:26 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:29 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:32 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:35 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:38 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:41 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:44 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:47 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:50 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:53 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:56 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:08:59 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:02 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:05 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:08 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:11 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:14 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:17 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:20 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:23 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:26 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:29 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:32 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:35 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:38 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:41 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:44 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:47 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:50 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:53 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:56 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:09:59 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:02 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:05 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:08 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:11 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:14 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:17 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:20 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:23 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:26 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:29 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:32 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:35 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:38 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:41 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:44 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:47 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:50 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:53 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:56 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:10:59 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:02 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:05 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:08 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:11 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:14 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:17 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:21 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:24 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:27 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:30 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:33 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:36 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:39 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:42 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:45 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:48 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:51 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:54 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:11:57 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:12:00 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:12:03 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:12:06 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:12:07 INFO mapred.Task: Task:attempt_local1059690743_0001_m_000000_0 is done. And is in the process of commiting
+14/12/01 04:12:07 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:12:07 INFO mapred.Task: Task attempt_local1059690743_0001_m_000000_0 is allowed to commit now
+14/12/01 04:12:07 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local1059690743_0001_m_000000_0' to file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/out
+14/12/01 04:12:07 INFO mapred.LocalJobRunner: file:/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv:0+199889
+14/12/01 04:12:07 INFO mapred.Task: Task 'attempt_local1059690743_0001_m_000000_0' done.
+14/12/01 04:12:07 INFO mapred.LocalJobRunner: Finishing task: attempt_local1059690743_0001_m_000000_0
+14/12/01 04:12:07 INFO mapred.LocalJobRunner: Map task executor complete.
+14/12/01 04:12:08 INFO util.Hadoop18TapUtil: deleting temp path /home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/out/_temporary

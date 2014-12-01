@@ -75,8 +75,8 @@ def main():
     flow = Flow()
     # The TextLine() scheme produces tuples where the first field is the
     # offset of the line in the file, and the second is the line as a string.
-    input = flow.source(Hfs(TextLine(), '/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/dirty_project_data_short.csv'))
-    output = flow.tsv_sink('/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading/out')
+    input = flow.source(Hfs(TextLine(), '/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading-github/dirty_project_data_short.csv'))
+    output = flow.tsv_sink('/home/cloudera/PyCharmProjects/fuzzy-string-matching-with-cascading-github/out')
 
     input | clean_product_names | output
 
